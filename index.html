@@ -25,7 +25,7 @@
     padding: 48px 24px;
   }
   .contenedor {
-    max-width: 640px;
+    max-width: 420px;
     margin: 0 auto;
   }
   header {
@@ -46,13 +46,7 @@
     margin: 0;
     line-height: 1.3;
   }
-  .tarjetas {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
   .tarjeta {
-    flex: 1 1 260px;
     border: 1px solid var(--papel-linea);
     border-radius: 4px;
     padding: 26px 24px;
@@ -83,39 +77,11 @@
   }
   .boton-primario { color: #ffffff; background: var(--tinta); }
   .boton-primario:hover { background: #0d1730; }
-  .boton-secundario { color: var(--tinta); background: transparent; border: 1px solid var(--tinta); }
-  .boton-secundario:hover { background: rgba(20,33,61,0.06); }
   .nota {
     margin-top: 14px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11.5px;
     color: var(--tinta-suave);
-  }
-  .pasos {
-    margin-top: 44px;
-    border-top: 1px solid var(--papel-linea);
-    padding-top: 28px;
-  }
-  .pasos h3 {
-    font-family: 'Lora', Georgia, serif;
-    font-weight: 600;
-    font-size: 17px;
-    margin: 0 0 16px;
-  }
-  ol {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--tinta);
-  }
-  ol li { margin-bottom: 6px; }
-  ol code {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12.5px;
-    background: #f4f6fb;
-    padding: 1px 6px;
-    border-radius: 2px;
   }
 </style>
 </head>
@@ -126,31 +92,11 @@
       <h1>Captura de Evaluaciones por Actividad</h1>
     </header>
 
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <h2>Ya tengo acceso</h2>
-        <p>Docentes: capturas calificaciones, generas concentrados y administras grupos. Alumnos: consultas tu propio estatus.</p>
-        <a class="boton boton-primario" href="https://script.google.com/a/macros/cetis42.edu.mx/s/AKfycbxNZpiJwcaULs6IVSJTCH-am5g3FI0XmGO_-9s4M-2kY0Ehse2sfP-OeN1MO0oM6wGW/exec" target="_blank" rel="noopener">Abrir aplicación</a>
-        <p class="nota">Entra con tu cuenta de Google institucional</p>
-      </div>
-
-      <div class="tarjeta">
-        <h2>Soy otro maestro</h2>
-        <p>Obtén tu propia copia completa (hoja + código) en tu Drive, totalmente separada de esta.</p>
-        <a class="boton boton-secundario" href="https://docs.google.com/spreadsheets/d/1Dla7i5XlkrcemEr7SEePysHOOemgY2ag_aStVtv5NGY/copy" target="_blank" rel="noopener">Hacer mi propia copia</a>
-        <p class="nota">Ve los pasos completos abajo ↓</p>
-      </div>
-    </div>
-
-    <div class="pasos">
-      <h3>Pasos para tu copia propia</h3>
-      <ol>
-        <li>Pulsa "Hacer mi propia copia" arriba y acepta cuando Google te lo pida — se crea todo (hoja + código) en tu propio Drive.</li>
-        <li>Dentro de tu copia: <code>Extensiones &gt; Apps Script &gt; Code.gs</code>. Busca <code>CORREOS_DOCENTE</code> casi al inicio y cambia el correo que aparece por el tuyo.</li>
-        <li>Guarda (Ctrl+S).</li>
-        <li><code>Implementar &gt; Nueva implementación</code> → Tipo: Aplicación web · Ejecutar como: Yo · Quién tiene acceso: cualquier usuario dentro de tu organización.</li>
-        <li>Implementa y autoriza los permisos. Te da una URL propia — esa es la que compartes con tus alumnos.</li>
-      </ol>
+    <div class="tarjeta">
+      <h2>Ya tengo acceso</h2>
+      <p>Docentes: capturas calificaciones, generas concentrados y administras grupos. Alumnos: consultas tu propio estatus.</p>
+      <a class="boton boton-primario" href="https://script.google.com/a/macros/cetis42.edu.mx/s/AKfycbxNZpiJwcaULs6IVSJTCH-am5g3FI0XmGO_-9s4M-2kY0Ehse2sfP-OeN1MO0oM6wGW/exec" target="_blank" rel="noopener">Abrir aplicación</a>
+      <p class="nota">Entra con tu cuenta de Google institucional</p>
     </div>
   </div>
 </body>
